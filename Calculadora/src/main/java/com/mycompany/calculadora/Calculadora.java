@@ -25,6 +25,9 @@ public class Calculadora {
             case 2:
                 System.out.println("La resta es: " + resta());
                 break;
+            case 3:
+                System.out.println("La multiplicacion es: " + multiplicacion());
+                break;
             default:
                 System.out.println("Operación no válida");
                 break;
@@ -46,5 +49,13 @@ public class Calculadora {
         System.out.println("Ingrese el segundo número:");
         int num2 = escaner.nextInt();
         return num1 - num2;
+    }
+
+    public static int multiplicacion() {
+        System.out.println("Ingrese el primer número:");
+        int num1 = escaner.nextInt();
+        System.out.println("Ingrese el segundo número:");
+        int num2 = escaner.nextInt();
+        return num1 * num2;
     }
 }
